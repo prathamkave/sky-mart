@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+body {
+	font-family: "MyCustomFont", sans-serif;
+}
+
+@font-face {
+	font-family: "MyCustomFont";
+	src: url("/fonts/8vIH7w4qzmVxm2BL9A.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@theme {
+	--font-custom: "MyCustomFont", sans-serif;
+}
