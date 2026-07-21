@@ -1,17 +1,41 @@
 @import "tailwindcss";
 
-body {
-	font-family: "MyCustomFont", sans-serif;
+@theme {
+	--font-syne: "Syne", sans-serif;
+	--font-dm-regular: "DM Sans Regular", sans-serif;
+	--font-dm-medium: "DM Sans Medium", sans-serif;
+	--font-dm-bold: "DM Sans Bold", sans-serif;
 }
 
 @font-face {
-	font-family: "MyCustomFont";
+	font-family: "Syne";
 	src: url("/fonts/8vIH7w4qzmVxm2BL9A.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 
-@theme {
-	--font-custom: "MyCustomFont", sans-serif;
+@font-face {
+	font-family: "DM Sans Regular";
+	src: url("/fonts/rP2Hp2ywxg089UriCZ2IHSeH.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "DM Sans Medium";
+	src: url("/fonts/rP2Hp2ywxg089UriCZOIHQ.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "DM Sans Bold";
+	src: url("/fonts/rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58Q.woff2")
+		format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
