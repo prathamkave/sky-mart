@@ -1,4 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
 @import "tailwindcss";
+
+@theme {
+	--font-syne: "Syne", sans-serif;
+}
+
+/* @import "tailwindcss";
 
 @theme {
 	--font-syne: "Syne", sans-serif;
@@ -38,4 +45,4 @@
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
-}
+} */

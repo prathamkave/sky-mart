@@ -2,11 +2,12 @@ import React from "react";
 import LoginPage from "./Pages/LoginPage";
 import RegisterPage from "./Pages/RegisterPage";
 import { Routes, Route } from "react-router";
+import Navbar from "./components/Navbar";
 
 const App = () => {
 	return (
 		<div>
-			<Routes>
+			{/* <Routes>
 				<Route
 					path='/'
 					element={<LoginPage />}
@@ -15,7 +16,8 @@ const App = () => {
 					path='/register'
 					element={<RegisterPage />}
 				/>
-			</Routes>
+			</Routes> */}
+			<Navbar />
 		</div>
 	);
 };
