@@ -181,7 +181,10 @@ const LoginPage = () => {
 
 							{/* Button */}
 
-							<button className='group flex w-full items-center justify-center gap-3 rounded-2xl bg-[#C8F400] text-md font-syne font-semibold text-black transition duration-300 hover:bg-lime-300 px-5 py-3 cursor-pointer'>
+							<button
+								className='group flex w-full items-center justify-center gap-3 rounded-2xl bg-[#C8F400] text-md font-syne font-semibold text-black transition duration-300 hover:bg-lime-300 px-5 py-3 cursor-pointer'
+								onClick={() => navigate("/home")}
+							>
 								Sign in
 								<ArrowRight size={18} />
 							</button>

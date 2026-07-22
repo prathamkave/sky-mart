@@ -4,7 +4,7 @@ import { ShoppingCart, LogOut, Zap } from "lucide-react";
 const Navbar = () => {
 	return (
 		<header className='sticky top-0 z-50 border-b border-white/10 bg-[#0B0B0B]'>
-			<div className='mx-auto flex h-20 max-w-325 items-center justify-between px-12'>
+			<div className='mx-auto flex h-18 max-w-325 items-center justify-between px-12'>
 				{/* Logo */}
 				<div className='flex items-center gap-3'>
 					<div className='flex h-8 w-8 items-center justify-center rounded-xl bg-[#C8F400] text-black'>
@@ -59,30 +59,24 @@ const Navbar = () => {
 				{/* Right Section */}
 				<div className='flex items-center gap-3'>
 					{/* User */}
-					<button className='flex cursor-pointer items-center gap-3 rounded-2xl border border-white/10 bg-[#161616] px-3 py-2 transition hover:border-lime-400/30'>
+					<button className='flex cursor-pointer items-center gap-3 rounded-2xl border border-white/10 bg-[#161616] px-3 py-1.5 transition hover:border-lime-400/30'>
 						<div className='flex h-8 w-8 items-center justify-center rounded-xl bg-[#C8F400] font-dm-bold text-black'>
 							P
 						</div>
 
-						<span className='font-semibold text-sm text-white'>
+						<span className='font-semibold text-xs text-white'>
 							Pratham Kave
 						</span>
 					</button>
 
 					{/* Cart */}
-					<button className='flex h-12 w-12 cursor-pointer items-center justify-center rounded-2xl border border-white/10 bg-[#161616] transition hover:border-lime-400/30 hover:text-lime-400'>
-						<ShoppingCart
-							size={22}
-							color='white'
-						/>
+					<button className='flex h-9 w-9 cursor-pointer items-center text-white justify-center rounded-lg border border-white/10 bg-[#161616] transition hover:border-lime-400/30 hover:text-[#C8F400]'>
+						<ShoppingCart size={18} />
 					</button>
 
 					{/* Logout */}
-					<button className='flex h-12 w-12 cursor-pointer items-center justify-center rounded-2xl border border-white/10 bg-[#161616] transition hover:border-red-500/40 hover:text-red-400'>
-						<LogOut
-							size={22}
-							color='white'
-						/>
+					<button className='flex h-9 w-9 cursor-pointer items-center text-white justify-center rounded-lg border border-white/10 bg-[#161616] transition hover:border-red-500/40 hover:text-red-400'>
+						<LogOut size={18} />
 					</button>
 				</div>
 			</div>
