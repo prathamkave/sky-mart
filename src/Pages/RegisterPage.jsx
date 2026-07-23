@@ -193,7 +193,7 @@ const RegisterPage = () => {
 					Already have an account?{" "}
 					<button
 						className='font-semibold text-sm text-[#C8F400] cursor-pointer'
-						onClick={() => navigate("/")}
+						onClick={() => navigate("/login")}
 					>
 						Sign in
 					</button>

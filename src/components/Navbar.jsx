@@ -23,7 +23,7 @@ const Navbar = () => {
 				{/* Navigation */}
 				<nav className='flex items-center gap-10'>
 					<NavLink
-						to='/home'
+						to='/'
 						className={({ isActive }) =>
 							`font-dm-bold text-md transition-colors duration-200 ${
 								isActive ? "text-[#C8F400]" : "text-zinc-500 hover:text-white"

@@ -1,13 +1,41 @@
-import React from "react";
-import LoginPage from "./Pages/LoginPage";
-import RegisterPage from "./Pages/RegisterPage";
-import { Routes, Route } from "react-router";
-import Navbar from "./components/Navbar";
-import AppRoutes from "./routes/AppRoutes";
-import ProtectedRoutes from "./routes/ProtectedRoutes";
+import { createBrowserRouter, RouterProvider } from "react-router";
 
-const App = () => {
-	return <AppRoutes />;
-};
+import MainLayout from "./layouts/MainLayout";
 
-export default App;
+import HomePage from "./pages/HomePage";
+import ShopPage from "./pages/ShopPage";
+import AboutPage from "./pages/AboutPage";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+
+const router = createBrowserRouter([
+	{
+		element: <MainLayout />,
+		children: [
+			{
+				path: "",
+				element: <HomePage />,
+			},
+			{
+				path: "shop",
+				element: <ShopPage />,
+			},
+			{
+				path: "about",
+				element: <AboutPage />,
+			},
+		],
+	},
+	{
+		path: "login",
+		element: <LoginPage />,
+	},
+	{
+		path: "register",
+		element: <RegisterPage />,
+	},
+]);
+
+export default function App() {
+	return <RouterProvider router={router} />;
+}
